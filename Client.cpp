@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
 
     fd_set readfds;
     timeval tv;
-    tv.tv_sec = 60;
+    tv.tv_sec = 0;
     tv.tv_usec = 500000;
 
     if((status = getaddrinfo(argv[0], "8086", &hints, &results)) != 0)
